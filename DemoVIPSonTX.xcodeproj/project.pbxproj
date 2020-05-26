@@ -3,27 +3,97 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16FC67DF88A3EC209A10D448 /* libPods-DemoVIPSonTX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C3DC01BE697BF26B21E36 /* libPods-DemoVIPSonTX.a */; };
+		4B0F1F05247CF4CD00F6BBEB /* WorkerAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F04247CF4CD00F6BBEB /* WorkerAssembler.swift */; };
+		4B0F1F07247CF67F00F6BBEB /* RegisterAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F06247CF67F00F6BBEB /* RegisterAssembler.swift */; };
+		4B0F1F09247CF69000F6BBEB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F08247CF69000F6BBEB /* RegisterViewController.swift */; };
+		4B0F1F0B247CF6A100F6BBEB /* RegisterIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F0A247CF6A100F6BBEB /* RegisterIteractor.swift */; };
+		4B0F1F0D247CF73D00F6BBEB /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F0C247CF73D00F6BBEB /* RegisterRouter.swift */; };
+		4B0F1F0F247CF74D00F6BBEB /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F0E247CF74D00F6BBEB /* RegisterPresenter.swift */; };
+		4B0F1F11247CF75D00F6BBEB /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F10247CF75D00F6BBEB /* RegisterModel.swift */; };
+		4B0F1F13247CF76C00F6BBEB /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0F1F12247CF76B00F6BBEB /* Register.xib */; };
+		4B0F1F15247CFA1600F6BBEB /* RegisterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F14247CFA1600F6BBEB /* RegisterWorker.swift */; };
+		4B0F1F17247CFCB000F6BBEB /* API+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F16247CFCB000F6BBEB /* API+Error.swift */; };
+		4B0F1F19247CFCBE00F6BBEB /* API+URl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F18247CFCBE00F6BBEB /* API+URl.swift */; };
+		4B0F1F1B247CFCD700F6BBEB /* API+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F1A247CFCD700F6BBEB /* API+Request.swift */; };
+		4B0F1F1D247CFCE600F6BBEB /* API+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F1C247CFCE600F6BBEB /* API+Response.swift */; };
+		4B0F1F20247D1BBD00F6BBEB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0F1F1F247D1BBD00F6BBEB /* API.swift */; };
+		4BC1E2CA247CD5A1009A7058 /* UIVIewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC1E2C9247CD5A1009A7058 /* UIVIewController+.swift */; };
 		4BD302D2247B884200F35ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302D1247B884200F35ABA /* AppDelegate.swift */; };
-		4BD302D4247B884200F35ABA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302D3247B884200F35ABA /* SceneDelegate.swift */; };
 		4BD302D6247B884200F35ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302D5247B884200F35ABA /* ViewController.swift */; };
 		4BD302D9247B884200F35ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD302D7247B884200F35ABA /* Main.storyboard */; };
 		4BD302DB247B884700F35ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD302DA247B884700F35ABA /* Assets.xcassets */; };
 		4BD302DE247B884700F35ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD302DC247B884700F35ABA /* LaunchScreen.storyboard */; };
+		4BD302EA247BA03300F35ABA /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302E9247BA03300F35ABA /* LoginModel.swift */; };
+		4BD302EC247BA06000F35ABA /* LoginIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302EB247BA06000F35ABA /* LoginIteractor.swift */; };
+		4BD302EE247BA06E00F35ABA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302ED247BA06E00F35ABA /* LoginViewController.swift */; };
+		4BD302F0247BA07800F35ABA /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302EF247BA07800F35ABA /* LoginRouter.swift */; };
+		4BD302F2247BA09E00F35ABA /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302F1247BA09E00F35ABA /* LoginWorker.swift */; };
+		4BD302F4247BA0BB00F35ABA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302F3247BA0BB00F35ABA /* User.swift */; };
+		4BD302F6247BA0DA00F35ABA /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302F5247BA0DA00F35ABA /* Assembler.swift */; };
+		4BD302F9247BA18700F35ABA /* LoginAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302F8247BA18700F35ABA /* LoginAssembler.swift */; };
+		4BD302FB247BA24000F35ABA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302FA247BA24000F35ABA /* LoginPresenter.swift */; };
+		4BD302FF247BA53E00F35ABA /* APIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD302FE247BA53E00F35ABA /* APIBase.swift */; };
+		4BD30301247BA5C300F35ABA /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD30300247BA5C300F35ABA /* LoginView.xib */; };
+		4BD30305247BB85700F35ABA /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD30304247BB85700F35ABA /* Home.xib */; };
+		4BD30307247BB86900F35ABA /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD30306247BB86900F35ABA /* HomeModel.swift */; };
+		4BD30309247BB89900F35ABA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD30308247BB89900F35ABA /* HomePresenter.swift */; };
+		4BD3030B247BB8AB00F35ABA /* HomeIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3030A247BB8AB00F35ABA /* HomeIteractor.swift */; };
+		4BD3030D247BB8B800F35ABA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3030C247BB8B800F35ABA /* HomeRouter.swift */; };
+		4BD3030F247BB8C600F35ABA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3030E247BB8C600F35ABA /* HomeViewController.swift */; };
+		4BD30311247BB8D100F35ABA /* HomeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD30310247BB8D100F35ABA /* HomeAssembler.swift */; };
+		4BD30313247BBCDA00F35ABA /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD30312247BBCDA00F35ABA /* HomeWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4192294C484F054B91578F76 /* Pods-DemoVIPSonTX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoVIPSonTX.release.xcconfig"; path = "Target Support Files/Pods-DemoVIPSonTX/Pods-DemoVIPSonTX.release.xcconfig"; sourceTree = "<group>"; };
+		4B0F1F04247CF4CD00F6BBEB /* WorkerAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerAssembler.swift; sourceTree = "<group>"; };
+		4B0F1F06247CF67F00F6BBEB /* RegisterAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAssembler.swift; sourceTree = "<group>"; };
+		4B0F1F08247CF69000F6BBEB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4B0F1F0A247CF6A100F6BBEB /* RegisterIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterIteractor.swift; sourceTree = "<group>"; };
+		4B0F1F0C247CF73D00F6BBEB /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		4B0F1F0E247CF74D00F6BBEB /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		4B0F1F10247CF75D00F6BBEB /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		4B0F1F12247CF76B00F6BBEB /* Register.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Register.xib; sourceTree = "<group>"; };
+		4B0F1F14247CFA1600F6BBEB /* RegisterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorker.swift; sourceTree = "<group>"; };
+		4B0F1F16247CFCB000F6BBEB /* API+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Error.swift"; sourceTree = "<group>"; };
+		4B0F1F18247CFCBE00F6BBEB /* API+URl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+URl.swift"; sourceTree = "<group>"; };
+		4B0F1F1A247CFCD700F6BBEB /* API+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Request.swift"; sourceTree = "<group>"; };
+		4B0F1F1C247CFCE600F6BBEB /* API+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Response.swift"; sourceTree = "<group>"; };
+		4B0F1F1F247D1BBD00F6BBEB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		4BC1E2C9247CD5A1009A7058 /* UIVIewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+.swift"; sourceTree = "<group>"; };
 		4BD302CE247B884200F35ABA /* DemoVIPSonTX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoVIPSonTX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD302D1247B884200F35ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4BD302D3247B884200F35ABA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4BD302D5247B884200F35ABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4BD302D8247B884200F35ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BD302DA247B884700F35ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BD302DD247B884700F35ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BD302DF247B884700F35ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD302E9247BA03300F35ABA /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		4BD302EB247BA06000F35ABA /* LoginIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginIteractor.swift; sourceTree = "<group>"; };
+		4BD302ED247BA06E00F35ABA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4BD302EF247BA07800F35ABA /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		4BD302F1247BA09E00F35ABA /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		4BD302F3247BA0BB00F35ABA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4BD302F5247BA0DA00F35ABA /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		4BD302F8247BA18700F35ABA /* LoginAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembler.swift; sourceTree = "<group>"; };
+		4BD302FA247BA24000F35ABA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4BD302FE247BA53E00F35ABA /* APIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBase.swift; sourceTree = "<group>"; };
+		4BD30300247BA5C300F35ABA /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		4BD30304247BB85700F35ABA /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
+		4BD30306247BB86900F35ABA /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		4BD30308247BB89900F35ABA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		4BD3030A247BB8AB00F35ABA /* HomeIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIteractor.swift; sourceTree = "<group>"; };
+		4BD3030C247BB8B800F35ABA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		4BD3030E247BB8C600F35ABA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4BD30310247BB8D100F35ABA /* HomeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembler.swift; sourceTree = "<group>"; };
+		4BD30312247BBCDA00F35ABA /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		4C4C3DC01BE697BF26B21E36 /* libPods-DemoVIPSonTX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoVIPSonTX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41B6A4F60E138CCDA1BB843 /* Pods-DemoVIPSonTX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoVIPSonTX.debug.xcconfig"; path = "Target Support Files/Pods-DemoVIPSonTX/Pods-DemoVIPSonTX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +101,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FC67DF88A3EC209A10D448 /* libPods-DemoVIPSonTX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05F1CACBF468E5A687B7125F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C4C3DC01BE697BF26B21E36 /* libPods-DemoVIPSonTX.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B0F1F1E247D197000F6BBEB /* APIBase */ = {
+			isa = PBXGroup;
+			children = (
+				4BD302FE247BA53E00F35ABA /* APIBase.swift */,
+			);
+			path = APIBase;
+			sourceTree = "<group>";
+		};
+		4BC1E2C8247CABAD009A7058 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4BC1E2C9247CD5A1009A7058 /* UIVIewController+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4BC1E2CB247CF3FE009A7058 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				4B0F1F06247CF67F00F6BBEB /* RegisterAssembler.swift */,
+				4B0F1F08247CF69000F6BBEB /* RegisterViewController.swift */,
+				4B0F1F0C247CF73D00F6BBEB /* RegisterRouter.swift */,
+				4B0F1F0A247CF6A100F6BBEB /* RegisterIteractor.swift */,
+				4B0F1F0E247CF74D00F6BBEB /* RegisterPresenter.swift */,
+				4B0F1F10247CF75D00F6BBEB /* RegisterModel.swift */,
+				4B0F1F12247CF76B00F6BBEB /* Register.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		4BD302C5247B884200F35ABA = {
 			isa = PBXGroup;
 			children = (
 				4BD302D0247B884200F35ABA /* DemoVIPSonTX */,
 				4BD302CF247B884200F35ABA /* Products */,
+				C54AD61E1733C3482181E5E3 /* Pods */,
+				05F1CACBF468E5A687B7125F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +167,13 @@
 		4BD302D0247B884200F35ABA /* DemoVIPSonTX */ = {
 			isa = PBXGroup;
 			children = (
+				4BC1E2C8247CABAD009A7058 /* Extension */,
+				4BD302E5247B9E4300F35ABA /* Domain */,
+				4BD302F7247BA15100F35ABA /* Service */,
+				4BD302E8247B9E6C00F35ABA /* Worker */,
+				4BD302E7247B9E5C00F35ABA /* Assembler */,
+				4BD302E6247B9E5300F35ABA /* Scenes */,
 				4BD302D1247B884200F35ABA /* AppDelegate.swift */,
-				4BD302D3247B884200F35ABA /* SceneDelegate.swift */,
 				4BD302D5247B884200F35ABA /* ViewController.swift */,
 				4BD302D7247B884200F35ABA /* Main.storyboard */,
 				4BD302DA247B884700F35ABA /* Assets.xcassets */,
@@ -67,6 +183,109 @@
 			path = DemoVIPSonTX;
 			sourceTree = "<group>";
 		};
+		4BD302E5247B9E4300F35ABA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4BD302FC247BA4B800F35ABA /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4BD302E6247B9E5300F35ABA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4BC1E2CB247CF3FE009A7058 /* Register */,
+				4BD30302247BB7A200F35ABA /* Login */,
+				4BD30303247BB7BF00F35ABA /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4BD302E7247B9E5C00F35ABA /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				4BD302F5247BA0DA00F35ABA /* Assembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		4BD302E8247B9E6C00F35ABA /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				4B0F1F04247CF4CD00F6BBEB /* WorkerAssembler.swift */,
+				4B0F1F14247CFA1600F6BBEB /* RegisterWorker.swift */,
+				4BD302F1247BA09E00F35ABA /* LoginWorker.swift */,
+				4BD30312247BBCDA00F35ABA /* HomeWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		4BD302F7247BA15100F35ABA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4BD302FD247BA52600F35ABA /* API */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4BD302FC247BA4B800F35ABA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BD302F3247BA0BB00F35ABA /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BD302FD247BA52600F35ABA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4B0F1F1E247D197000F6BBEB /* APIBase */,
+				4B0F1F1F247D1BBD00F6BBEB /* API.swift */,
+				4B0F1F16247CFCB000F6BBEB /* API+Error.swift */,
+				4B0F1F18247CFCBE00F6BBEB /* API+URl.swift */,
+				4B0F1F1A247CFCD700F6BBEB /* API+Request.swift */,
+				4B0F1F1C247CFCE600F6BBEB /* API+Response.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4BD30302247BB7A200F35ABA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4BD302F8247BA18700F35ABA /* LoginAssembler.swift */,
+				4BD302ED247BA06E00F35ABA /* LoginViewController.swift */,
+				4BD302EF247BA07800F35ABA /* LoginRouter.swift */,
+				4BD302EB247BA06000F35ABA /* LoginIteractor.swift */,
+				4BD302FA247BA24000F35ABA /* LoginPresenter.swift */,
+				4BD302E9247BA03300F35ABA /* LoginModel.swift */,
+				4BD30300247BA5C300F35ABA /* LoginView.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4BD30303247BB7BF00F35ABA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4BD30310247BB8D100F35ABA /* HomeAssembler.swift */,
+				4BD3030E247BB8C600F35ABA /* HomeViewController.swift */,
+				4BD3030C247BB8B800F35ABA /* HomeRouter.swift */,
+				4BD3030A247BB8AB00F35ABA /* HomeIteractor.swift */,
+				4BD30308247BB89900F35ABA /* HomePresenter.swift */,
+				4BD30306247BB86900F35ABA /* HomeModel.swift */,
+				4BD30304247BB85700F35ABA /* Home.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C54AD61E1733C3482181E5E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E41B6A4F60E138CCDA1BB843 /* Pods-DemoVIPSonTX.debug.xcconfig */,
+				4192294C484F054B91578F76 /* Pods-DemoVIPSonTX.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD302E2247B884700F35ABA /* Build configuration list for PBXNativeTarget "DemoVIPSonTX" */;
 			buildPhases = (
+				86A1EE160403F0288A68A3F1 /* [CP] Check Pods Manifest.lock */,
 				4BD302CA247B884200F35ABA /* Sources */,
 				4BD302CB247B884200F35ABA /* Frameworks */,
 				4BD302CC247B884200F35ABA /* Resources */,
+				8DB5DD685662211CD4F6B549 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,21 +347,96 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD302DE247B884700F35ABA /* LaunchScreen.storyboard in Resources */,
+				4BD30305247BB85700F35ABA /* Home.xib in Resources */,
 				4BD302DB247B884700F35ABA /* Assets.xcassets in Resources */,
+				4BD30301247BA5C300F35ABA /* LoginView.xib in Resources */,
+				4B0F1F13247CF76C00F6BBEB /* Register.xib in Resources */,
 				4BD302D9247B884200F35ABA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86A1EE160403F0288A68A3F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoVIPSonTX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DB5DD685662211CD4F6B549 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoVIPSonTX/Pods-DemoVIPSonTX-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoVIPSonTX/Pods-DemoVIPSonTX-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoVIPSonTX/Pods-DemoVIPSonTX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4BD302CA247B884200F35ABA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD3030B247BB8AB00F35ABA /* HomeIteractor.swift in Sources */,
+				4B0F1F1D247CFCE600F6BBEB /* API+Response.swift in Sources */,
+				4BD302FB247BA24000F35ABA /* LoginPresenter.swift in Sources */,
+				4BD302F9247BA18700F35ABA /* LoginAssembler.swift in Sources */,
+				4BD302EE247BA06E00F35ABA /* LoginViewController.swift in Sources */,
+				4BD30309247BB89900F35ABA /* HomePresenter.swift in Sources */,
+				4BD3030F247BB8C600F35ABA /* HomeViewController.swift in Sources */,
+				4B0F1F15247CFA1600F6BBEB /* RegisterWorker.swift in Sources */,
+				4BC1E2CA247CD5A1009A7058 /* UIVIewController+.swift in Sources */,
+				4B0F1F0F247CF74D00F6BBEB /* RegisterPresenter.swift in Sources */,
+				4BD302F2247BA09E00F35ABA /* LoginWorker.swift in Sources */,
+				4BD302EC247BA06000F35ABA /* LoginIteractor.swift in Sources */,
+				4B0F1F1B247CFCD700F6BBEB /* API+Request.swift in Sources */,
+				4BD30313247BBCDA00F35ABA /* HomeWorker.swift in Sources */,
+				4BD30311247BB8D100F35ABA /* HomeAssembler.swift in Sources */,
+				4B0F1F07247CF67F00F6BBEB /* RegisterAssembler.swift in Sources */,
+				4B0F1F0B247CF6A100F6BBEB /* RegisterIteractor.swift in Sources */,
+				4BD302EA247BA03300F35ABA /* LoginModel.swift in Sources */,
+				4BD3030D247BB8B800F35ABA /* HomeRouter.swift in Sources */,
+				4B0F1F11247CF75D00F6BBEB /* RegisterModel.swift in Sources */,
+				4B0F1F09247CF69000F6BBEB /* RegisterViewController.swift in Sources */,
 				4BD302D6247B884200F35ABA /* ViewController.swift in Sources */,
+				4B0F1F20247D1BBD00F6BBEB /* API.swift in Sources */,
+				4BD302F6247BA0DA00F35ABA /* Assembler.swift in Sources */,
+				4BD302FF247BA53E00F35ABA /* APIBase.swift in Sources */,
+				4B0F1F05247CF4CD00F6BBEB /* WorkerAssembler.swift in Sources */,
+				4BD30307247BB86900F35ABA /* HomeModel.swift in Sources */,
+				4B0F1F0D247CF73D00F6BBEB /* RegisterRouter.swift in Sources */,
+				4B0F1F17247CFCB000F6BBEB /* API+Error.swift in Sources */,
+				4BD302F4247BA0BB00F35ABA /* User.swift in Sources */,
 				4BD302D2247B884200F35ABA /* AppDelegate.swift in Sources */,
-				4BD302D4247B884200F35ABA /* SceneDelegate.swift in Sources */,
+				4B0F1F19247CFCBE00F6BBEB /* API+URl.swift in Sources */,
+				4BD302F0247BA07800F35ABA /* LoginRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +578,12 @@
 		};
 		4BD302E3247B884700F35ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E41B6A4F60E138CCDA1BB843 /* Pods-DemoVIPSonTX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoVIPSonTX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +597,12 @@
 		};
 		4BD302E4247B884700F35ABA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4192294C484F054B91578F76 /* Pods-DemoVIPSonTX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoVIPSonTX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
